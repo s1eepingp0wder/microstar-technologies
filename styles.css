@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=|Raleway|Roboto|Titillium+Web:200,200i&subset=latin-ext');
+
+/* Fonts: 'Roboto', 'Raleway', Titillium*/
+
+body{
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  background: #F4F4F4;
+}
+h2{
+  font-family: 'Titillium', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 2.3em;
+  margin-bottom: -10px;
+}
+#mainwrapper{
+  background: lightskyblue;
+  height: 80vh;
+  width: 80vw;
+  max-height: 80vh;
+  max-width: 80vw;
+  padding: 5vh 5vw;
+  position: absolute;
+  left:0;
+  right:0;
+  margin: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+nav ul li img{
+  height: 24px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-top: -3px;
+}
+nav ul li{
+  display: inline-block;
+  height: 32px;
+  margin: 0 90px 0 0;
+  border-bottom: 3px solid transparent;
+  transition: 0.75s;
+}
+nav ul li a{
+  text-decoration: none;
+}
+nav ul li:hover{
+  border-bottom: 3px solid gray;
+}
+.backgroundimg{
+  position: relative;
+  background: url("./images/los-angeles.jpg");
+  background-size: cover;
+  width: 90vw;
+  height:40vh;
+  margin: -5vh -5vw;
+}
+.heading{
+  font-family: 'Titillium', Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 4em;
+  color: white;
+  text-shadow: 3px 1px 5px black;
+  weight: 200;
+  position: absolute;
+  right: 3vw;
+  bottom:-3vh;
+}
+.subtitle{
+  font-family: 'Titillium', Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 2em;
+  color: white;
+  text-shadow: 3px 1px 5px black;
+  weight: 200;
+  position: absolute;
+  right: 3vw;
+  bottom:-2vh;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
