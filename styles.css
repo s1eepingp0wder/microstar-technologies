@@ -49,6 +49,7 @@ nav ul li:hover{
 .backgroundimg{
   position: relative;
   background: url("./images/los-angeles.jpg");
+  background-position: center;
   background-size: cover;
   width: 90vw;
   height:40vh;
