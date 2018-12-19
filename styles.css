@@ -86,3 +86,15 @@ nav ul li:hover{
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
+.textwrapper{
+  width: 75vw;
+  min-height: 10vh;
+  /* border: 1px solid black; */
+  position: relative;
+  top: 10vh;
+}
+hr {
+  width: 50%;
+  border: 1px solid black;
+  margin: 30px auto;
+}
