@@ -1,0 +1,60 @@
+body{
+  background: black;
+  color: lime;
+  font-family: monospace;
+}
+#loginwrapper{
+  width: 40vw;
+  height: 30vh;
+  max-width: 40vw;
+  max-height: 30vh;
+  border: 1px solid lime;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30vh;
+  margin: auto;
+}
+h1{
+  font-family: monospace;
+  font-size: 3em;
+  text-align: center;
+}
+.centered{
+  width: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.centered form input[type=button], input[type=submit], input[type=reset], input[type=password] {
+  font-family: monospace;
+  color: lime;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid lime;
+  margin: 10px auto;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid lime; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: lime; }
+}
