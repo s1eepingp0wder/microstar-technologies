@@ -92,6 +92,14 @@ nav ul li:hover{
   min-height: 10vh;
   display: flex;
   justify-content: space-around;
+  overflow: hidden;
+}
+.abtwrapper{
+  position: absolute;
+  top: 400px;
+  min-height: 10vh;
+  overflow: hidden;
+  padding: 0 50px 0 0;
 }
 hr {
   width: 50%;
@@ -129,4 +137,19 @@ textarea {
 .emailus:hover{
   background: dimgray;
   letter-spacing: 3px;
+}
+.videowrapper {
+  position: relative;
+  text-align: center;
+  color: white;
+  float: left;
+  margin-right: 10px;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  font-size: 8px;
+  background: rgba(0,0,0,0.8);
+  padding: 2px;
 }
