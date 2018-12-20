@@ -20,11 +20,21 @@ h1{
   font-size: 3em;
   text-align: center;
 }
+hr{
+  border: 1px solid lime;
+}
 .centered{
   width: 200px;
   position: absolute;
   left: 0;
   right: 0;
+  margin: auto;
+}
+.centered p{
+  width: 600px;
+  position: absolute;
+  bottom: -180px;
+  left: -190px;
   margin: auto;
 }
 .centered form input[type=button], input[type=submit], input[type=reset], input[type=password] {
@@ -57,4 +67,116 @@ h1{
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: lime; }
+}
+#consolewrapper{
+  width: 800px;
+  height: 800px;
+  max-width: 800px;
+  max-height: 800px;
+  border: 1px solid lime;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 3vh;
+  margin: auto;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+ul{
+  float: left;
+}
+
+a {
+  color: lime;
+  text-decoration: none;
+}
+p{
+  margin: 0 0 0 200px;
+}
+pre{
+  font-size: 4px;
+}
+
+/* DO NOT GO BELOW THIS!! */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lime;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: lime;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
 }
