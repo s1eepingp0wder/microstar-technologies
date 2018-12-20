@@ -87,14 +87,46 @@ nav ul li:hover{
                                   supported by Chrome and Opera */
 }
 .textwrapper{
-  width: 75vw;
+  position: absolute;
+  top: 400px;
   min-height: 10vh;
-  /* border: 1px solid black; */
-  position: relative;
-  top: 10vh;
+  display: flex;
+  justify-content: space-around;
 }
 hr {
   width: 50%;
   border: 1px solid black;
   margin: 30px auto;
+}
+#tollfree, #email, #aura{
+  max-width: 400px;
+  /* border-left: 1px solid black; */
+  padding: 20px;
+}
+.required:after{
+  content: " *";
+  color: red;
+}
+textarea {
+  resize: none;
+  overflow-y: scroll;
+}
+.emailus{
+  display: block;
+  background: darkgrey;
+  max-width: 150px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+.emailus a{
+  color: white;
+  text-decoration: none;
+}
+.emailus:hover{
+  background: dimgray;
+  letter-spacing: 3px;
 }
