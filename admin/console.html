@@ -7,7 +7,18 @@
     <link href="./styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <script>
+    if (window.parent != window.top) {
+      // We're deeper than one down
+      window.location("./login.html");
+    }
+    </script>
     <script defer src="main.js"></script>
+    <script>
+            if (window.history.length < 1){
+              window.location="./login.html"
+            }
+    </script>
     <div id="consolewrapper">
       <div>
       <h1>MicroStar Console</h1>
