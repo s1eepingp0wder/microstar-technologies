@@ -116,6 +116,10 @@ pre{
   font-size: 4px;
 }
 
+.largercode{
+  font-size: 6px;
+}
+
 /* DO NOT GO BELOW THIS!! */
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -197,4 +201,10 @@ pre{
   100% {
     transform: translate(19px, 0);
   }
+}
+::selection {
+  background: blue; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: blue; /* Gecko Browsers */
 }
